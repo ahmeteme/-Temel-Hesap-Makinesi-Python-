@@ -1,0 +1,18 @@
+def calculate(a, b, op):
+    operations = {
+        '+': add,
+        '-': subtract,
+        '*': multiply,
+        '/': divide,
+        '^': power
+    }
+    if op in operations:
+        return operations[op](a, b)
+    else:
+        return "Invalid operation"
+
+if __name__ == "__main__":
+    x = float(input("First number: "))
+    y = float(input("Second number: "))
+    op = input("Operation (+, -, *, /, ^): ")
+    print("Result:", calculate(x, y, op))
