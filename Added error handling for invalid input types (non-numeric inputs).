@@ -1,0 +1,7 @@
+try:
+    x = float(input("First number: "))
+    y = float(input("Second number: "))
+    op = input("Operation (+, -, *, /, ^): ")
+    print("Result:", calculate(x, y, op))
+except ValueError:
+    print("Invalid input. Please enter numeric values.")
