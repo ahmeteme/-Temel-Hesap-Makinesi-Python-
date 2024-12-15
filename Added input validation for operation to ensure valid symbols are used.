@@ -1,0 +1,13 @@
+if op not in ['+', '-', '*', '/', '^']:
+    print("Invalid operation. Please choose from +, -, *, /, ^")
+else:
+    if op == '+':
+        print("Result:", add(x, y))
+    elif op == '-':
+        print("Result:", subtract(x, y))
+    elif op == '*':
+        print("Result:", multiply(x, y))
+    elif op == '/':
+        print("Result:", divide(x, y))
+    elif op == '^':
+        print("Result:", power(x, y))
